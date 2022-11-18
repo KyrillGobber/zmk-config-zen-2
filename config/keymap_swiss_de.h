@@ -61,7 +61,7 @@
 #define CH_I    I    // I
 #define CH_O    O    // O
 #define CH_P    P    // P
-#define DE_UDIA LBKT // Ü
+#define CE_UDIA LBKT // Ü
 #define CH_DIAE RBKT // ¨ (dead)
 // Row 3
 #define CH_A    A    // A
@@ -75,7 +75,7 @@
 #define CH_L    L    // L
 #define CH_ODIA SEMI // Ö
 #define CH_ADIA SQT  // Ä
-#define CH_HASH NUHS // $
+#define CH_DLR  DLLR // $
 // Row 4
 #define CH_LABK NUBS // <
 #define CH_Y    Z    // Y
