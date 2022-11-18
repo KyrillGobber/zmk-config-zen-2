@@ -75,7 +75,7 @@
 #define CH_L    L    // L
 #define CH_ODIA SEMI // Ö
 #define CH_ADIA SQT  // Ä
-#define CH_DLR  DLLR // $
+#define CH_DLR  NUHS // $
 // Row 4
 #define CH_LABK NUBS // <
 #define CH_Y    Z    // Y
