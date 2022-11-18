@@ -47,9 +47,9 @@
                         label = "RAISE";
                         bindings = <
 //,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
-  &kp CH_SECT  &kp CH_BSLS  &kp CH_SLSH  &kp CH_LPRN  &kp CH_RPRN  &none           &kp PGUP    &kp HOME     &kp UP      &kp END    &kp CH_UDIA  &kp DEL
+  &kp CH_SECT  &kp CH_BSLS  &kp CH_SLSH  &kp CH_LPRN  &kp CH_RPRN  &none           &kp PG_UP    &kp HOME     &kp UP      &kp END    &kp CH_UDIA  &kp DEL
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
-  &kp LCTR     &kp CH_AT    &kp CH_HASH  &kp CH_LCBR  &kp CH_RCBR  &none           &kp PGDN    &kp LEFT     &kp DOWN    &kp RIGHT  &kp CH_QUES  &kp CH_EXLM
+  &kp LCTR     &kp CH_AT    &kp CH_HASH  &kp CH_LCBR  &kp CH_RCBR  &none           &kp PG_DN    &kp LEFT     &kp DOWN    &kp RIGHT  &kp CH_QUES  &kp CH_EXLM
 //|-----------+------------+------------+------------+------------+--------|      |-----------+-----------+------------+----------+------------+----------|
   &kp LSHFT     &kp CH_LABK  &kp CH_RABK  &kp CH_LBRC  &kp CH_RBRC  &none           &none       &none        &none      &kp CH_GRV  &kp CH_DLR   &none
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|

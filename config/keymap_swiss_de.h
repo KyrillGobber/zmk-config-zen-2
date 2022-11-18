@@ -103,7 +103,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define CH_DEG  LS(CH_SECT) // °
+//#define CH_DEG  LS(CH_SECT) // °
 #define CH_PLUS LS(CH_1)    // +
 #define CH_DQUO LS(CH_2)    // "
 #define CH_ASTR LS(CH_3)    // *
