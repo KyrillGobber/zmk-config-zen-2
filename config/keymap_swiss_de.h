@@ -37,7 +37,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define CH_SECT TILDE // § (didn't find that one)
+//#define CH_SECT TILDE // § (didn't find that one)
 #define CH_1    N1    // 1
 #define CH_2    N2    // 2
 #define CH_3    N3    // 3
@@ -61,7 +61,7 @@
 #define CH_I    I    // I
 #define CH_O    O    // O
 #define CH_P    P    // P
-#define CE_UDIA LBKT // Ü
+#define CH_UDIA LBKT // Ü
 #define CH_DIAE RBKT // ¨ (dead)
 // Row 3
 #define CH_A    A    // A
