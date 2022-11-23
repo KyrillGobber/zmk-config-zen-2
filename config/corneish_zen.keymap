@@ -19,14 +19,14 @@
 
 / {
         behaviors {
-          td0: tap_dance_0 {
-              compatible = "zmk,behavior-tap-dance";
-              label = "TAP_DANCE_0";
-              #binding-cells = <0>;
-              tapping-term-ms = <150>;
-              bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+          mo_sl: behavior_mo_sl {
+              compatible = "zmk,behavior-hold-tap";
+              label = "mo_sl";
+              #binding-cells = <2>;
+              flavor = "hold-preferred";
+              tapping-term-ms = <200>;
+              bindings = <&mo>, <&sl>;
           };
-        };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -41,7 +41,7 @@
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
   &kp LSHFT    &kp CH_Y     &kp X        &kp C        &kp V        &kp B           &kp N       &kp M        &kp CH_COMM &kp CH_DOT &kp CH_MINS  &kp RSHIFT
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
-                                         &kp LGUI     &mo LOWER    &kp RET         &kp SPACE   &mo RAISE    &sl OSL
+                                         &kp LGUI     &mo LOWER    &kp RET         &kp SPACE   &mo_sl RAISE OSL &kp RALT
                                       //`----------------------------------'      `-----------------------------------'
                         >;
                 };
