@@ -18,11 +18,21 @@
 };
 
 / {
+        behaviors {
+          td0: tap_dance_0 {
+              compatible = "zmk,behavior-tap-dance";
+              label = "TAP_DANCE_0";
+              #binding-cells = <0>;
+              tapping-term-ms = <150>;
+              bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+          };
+        };
+        behaviors { td_mytd: tap_dance_my { compatible = "zmk,behavior-tap-dance"; label = "TAP_DANCE_MY; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mt LSHFT SPACE>, <&mo 2>; }; };
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "QWERTY";
+                        label = "MAIN";
                         bindings = <
 //,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
   &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp T           &kp CH_Z    &kp U        &kp I      &kp O       &kp P        &kp BSPC
@@ -31,7 +41,7 @@
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
   &kp LSHFT    &kp CH_Y     &kp X        &kp C        &kp V        &kp B           &kp N       &kp M        &kp CH_COMM &kp CH_DOT &kp CH_MINS  &kp RSHIFT
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
-                                         &kp LGUI     &mo LOWER    &kp RET         &kp SPACE   &mo RAISE    &sl OSL
+                                         &kp LGUI     &mo LOWER    &kp RET         &kp SPACE   &lt RAISE &sl OSL    &sl OSL
                                       //`----------------------------------'      `-----------------------------------'
                         >;
                 };
@@ -78,7 +88,7 @@
                         >;
                 };
                 GAME {
-                        label = "QWERTY";
+                        label = "GAME";
                         bindings = <
 //,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
   &kp TAB      &kp N2       &kp Q        &kp W        &kp E        &kp R           &none       &none        &kp UP     &none       &none        &none
