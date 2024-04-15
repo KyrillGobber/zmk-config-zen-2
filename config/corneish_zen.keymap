@@ -45,37 +45,51 @@
                 timeout-ms = <50>;
                 key-positions = <25 26>;
                 bindings = <&kp LSHIFT>;
+                slow-release = true;
+                layers = 6;
             };
             combo_LCTRL {
                 timeout-ms = <50>;
                 key-positions = <13 14>;
                 bindings = <&mt LCTRL ESC>;
+                slow-release = true;
+                layers = 6;
             };
             combo_tab {
                 timeout-ms = <50>;
                 key-positions = <1 2>;
                 bindings = <&kp TAB>;
+                slow-release = true;
+                layers = 6;
             };
 
             combo_RSHIFT {
                 timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp RSHIFT>;
+                slow-release = true;
+                layers = 6;
             };
             combo_RCTRL {
                 timeout-ms = <50>;
                 key-positions = <33 34>;
                 bindings = <&kp RCTRL>;
+                slow-release = true;
+                layers = 6;
             };
             combo_BSPC {
                 timeout-ms = <50>;
                 key-positions = <20 21>;
                 bindings = <&kp BSPC>;
+                slow-release = true;
+                layers = 6;
             };
             combo_ADIA {
                 timeout-ms = <50>;
-                key-positions = <9 10>;
+                key-positions = <20 21 22>;
                 bindings = <&kp CH_ADIA>;
+                slow-release = true;
+                layers = 6;
             };
         };
 
