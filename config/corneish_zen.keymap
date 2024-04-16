@@ -71,7 +71,7 @@
                 timeout-ms = <50>;
                 key-positions = <33 34>;
                 bindings = <&kp RSHIFT>;
-                layers = <5>
+                layers = <5>;
             };
             combo_RCTRL {
                 timeout-ms = <50>;
