@@ -154,9 +154,9 @@
                         label = "OSL";
                         bindings = <
 //,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
-  &none        &kp CH_PLUS  &kp CH_DQUO  &kp CH_ASTR  &kp CH_CCED  &kp CH_PERC     &kp CH_AMPR &kp CH_SLSH  &kp CH_LPRN &kp CH_RPRN &kp CH_EQL  &kp CH_QUOT
+  &none        &kp CH_PLUS  &kp CH_DQUO  &kp CH_ASTR  &kp CH_CCED  &kp CH_PERC     &kp CH_AMPR &kp CH_SLSH  &kp CH_LPRN &kp CH_RPRN &kp CH_EQL   &kp CH_QUOT
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
-  &none        &kp CH_BRKP  &kp CH_AT    &kp CH_EURO  &none        &none           &none       &kp CH_PIPE &none        &none      &kp CH_DLR   &kp CH_ACUT
+  &none        &kp CH_BRKP  &kp CH_AT    &kp CH_EURO  &none        &none           &none       &kp CH_PIPE &none        &none       &kp CH_DLR   &kp CH_GRV
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
   &none        &none        &none        &none        &none        &none           &none       &none         &none      &none       &kp CH_DLR   &kp CH_TILD
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
