@@ -1,11 +1,11 @@
 #include "keymap_swiss_de.h"
 
 #define DEFAULT 0
-#define LOWER 1
-#define RAISE 2
-#define OSL   3
-#define GAME  4
-#define MAC   5
+#define MAC   1
+#define LOWER 2
+#define RAISE 3
+#define OSL   4
+#define GAME  5
 #define HYP_MAC LC(LA(LGUI))
 
 / {
@@ -46,66 +46,6 @@
           };
         };
 
-        combos {
-            compatible = "zmk,combos";
-
-            combo_LSHIFT {
-                timeout-ms = <50>;
-                key-positions = <25 26>;
-                bindings = <&kp LSHIFT>;
-                layers = <5>;
-            };
-            combo_LCTRL {
-                timeout-ms = <50>;
-                key-positions = <13 14>;
-                bindings = <&mt LCTRL ESC>;
-                layers = <5>;
-            };
-            combo_LCTRLSHIFT {
-                timeout-ms = <50>;
-                key-positions = <13 14 15>;
-                bindings = <&mt LC(LSHIFT) ESC>;
-                layers = <5>;
-            };
-            combo_tab {
-                timeout-ms = <50>;
-                key-positions = <1 2>;
-                bindings = <&kp TAB>;
-                layers = <5>;
-            };
-
-            combo_RSHIFT {
-                timeout-ms = <50>;
-                key-positions = <33 34>;
-                bindings = <&kp RSHIFT>;
-                layers = <5>;
-            };
-            combo_RCTRL {
-                timeout-ms = <50>;
-                key-positions = <21 22>;
-                bindings = <&kp RCTRL>;
-                layers = <5>;
-            };
-            combo_RCTRLSHIFT {
-                timeout-ms = <50>;
-                key-positions = <21 22>;
-                bindings = <&kp RC(RSHIFT)>;
-                layers = <5>;
-            };
-            combo_BSPC {
-                timeout-ms = <50>;
-                key-positions = <9 10>;
-                bindings = <&kp BSPC>;
-                layers = <5>;
-            };
-            combo_ADIA {
-                timeout-ms = <50>;
-                key-positions = <20 21>;
-                bindings = <&kp CH_ADIA>;
-                layers = <5>;
-            };
-        };
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -120,6 +60,20 @@
   &kp LSHFT    &kp CH_Y     &kp X        &kp C        &kp V        &kp B           &kp N       &kp M        &kp CH_COMM &kp CH_DOT &kp CH_MINS  &kp RSHIFT
 //|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
                                          &kp LGUI     &mo LOWER    &kp RET         &kp SPACE   &mo_sl RAISE OSL &td0
+                                      //`----------------------------------'      `-----------------------------------'
+                        >;
+                };
+                MAC {
+                        label = "MAC";
+                        bindings = <
+//,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
+  &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp T           &kp CH_Z    &kp U        &kp I      &kp O       &kp P        &kp BSPC
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &mt LCTRL ESC &kp A       &kp S        &kp D        &kp F        &kp G           &kp H       &kp J        &kp K      &kp L       &kp CH_ODIA  &kp CH_ADIA
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &kp LSHFT    &kp CH_Y     &kp X        &kp C        &kp V        &kp B           &kp N       &kp M        &kp CH_COMM &kp CH_DOT &kp CH_MINS  &kp RSHIFT
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+                                         &kp HYP_MAC  &mo LOWER    &kp RET         &kp SPACE   &mo_sl RAISE OSL &kp LGUI
                                       //`----------------------------------'      `-----------------------------------'
                         >;
                 };
@@ -179,21 +133,7 @@
                                       //`----------------------------------'      `-----------------------------------'
                         >;
                 };
-                MAC {
-                        label = "MAC";
-                        bindings = <
-//,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
-  &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp T           &kp CH_Z    &kp U        &kp I      &kp O       &kp P        &kp BSPC
-//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
-&mt LCTRL ESC  &kp A        &kp S        &kp D        &kp F        &kp G           &kp H       &kp J        &kp K      &kp L       &kp CH_ODIA  &kp CH_ADIA
-//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
-  &kp LSHFT    &kp CH_Y     &kp X        &kp C        &kp V        &kp B           &kp N       &kp M        &kp CH_COMM &kp CH_DOT &kp CH_MINS  &kp RSHIFT
-//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
-                                         &kp HYP_MAC  &mo LOWER    &kp RET         &kp SPACE   &mo_sl RAISE OSL &LGUI
-                                      //`----------------------------------'      `-----------------------------------'
-                        >;
-                };
         };
 };
 
-
+    
