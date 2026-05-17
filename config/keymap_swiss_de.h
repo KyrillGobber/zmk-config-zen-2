@@ -160,3 +160,11 @@
 #define CH_RCBR RA(CH_DLR)  // }
 // Row 4
 #define CH_BSLS RA(CH_LABK) // (backslash)
+
+
+// Mac stuff
+#define MC_LCBR RA(CH_8)    // {
+#define MC_RCBR RA(CH_9)    // }
+#define MC_LBRC RA(CH_5)    // [
+#define MC_RBRC RA(CH_6)    // ]
+#define MC_AT RA(CH_G)      // @
